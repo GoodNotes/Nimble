@@ -3,9 +3,6 @@ import Dispatch
 #endif
 import Foundation
 @testable import Nimble
-#if SWIFT_PACKAGE && canImport(Darwin)
-@testable import NimbleObjectiveC
-#endif
 import XCTest
 
 public func failsWithErrorMessage(_ messages: [String], file: FileString = #file, line: UInt = #line, preferOriginalSourceLocation: Bool = false, closure: () throws -> Void) {
